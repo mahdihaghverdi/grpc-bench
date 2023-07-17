@@ -1,6 +1,9 @@
 import asyncio
+import pathlib
+import sys
 import time
 
+sys.path.append(str(pathlib.Path(__file__).parent.parent))
 from requesters import async_req
 
 s = time.perf_counter()

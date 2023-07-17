@@ -1,5 +1,8 @@
+import pathlib
+import sys
 import time
 
+sys.path.append(str(pathlib.Path(__file__).parent.parent))
 from requesters import sync_req
 
 s = time.perf_counter()
