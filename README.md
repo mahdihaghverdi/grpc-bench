@@ -109,3 +109,24 @@ python benchers/async_sample.py
 ```bash
 python benchers/sync_sample.py 
 ```
+
+## Os and Python versions of this benchmack
+```
+>>> import os
+>>> os.uname()
+posix.uname_result(sysname='Linux', nodename='mahdi', release='5.19.0-46-generic', version='#47~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Wed Jun 21 15:35:31 UTC 2', machine='x86_64')
+>>>
+```
+
+```
+>>> import platform
+>>> platform.python_version()
+'3.10.6'
+>>> platform.python_build()
+('main', 'May 29 2023 11:10:38')
+>>> platform.python_compiler()
+'GCC 11.3.0'
+>>> platform.python_implementation()
+'CPython'
+>>>
+```
