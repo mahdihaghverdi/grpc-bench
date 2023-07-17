@@ -100,3 +100,12 @@ python async_plot.py
 python sync_plot.py
 ```
 
+**to see and try the sample benchmarks**
+- async
+```bash
+python benchers/async_sample.py 
+```
+- sync
+```bash
+python benchers/sync_sample.py 
+```
