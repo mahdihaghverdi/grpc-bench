@@ -2,8 +2,10 @@ import csv
 import functools
 import logging
 import pathlib
+import sys
 import time
 
+sys.path.append(str(pathlib.Path(__file__).parent.parent))
 from benchers import number_of_reqs
 from requesters import sync_req
 

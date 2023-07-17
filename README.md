@@ -37,3 +37,66 @@ In these two pictures you can see the actual times against the number of request
 
 #### sync 
 ![](https://github.com/mahdihaghverdi/grpc-bench/blob/main/sync_stats.png)
+
+
+## Produce yourself
+To produce the results yourself you have to do the following:
+
+**clone the repo**
+```bash
+git clone https://github.com/mahdihaghverdi/grpc-bench
+```
+
+**go inside**
+```bash
+cd grpc-bench
+```
+
+**create a virtual environment**
+```bash
+python -m venv .venv
+```
+
+**install the requirements**
+```bash
+pip install -r requirements.txt
+```
+
+**activate the venv (linux)**
+```bash
+source .venv/bin/activate
+```
+
+- ### async test
+
+run the server
+```bash
+python servers/async_server.py
+```
+in another terminal, run the bencher
+```bash
+python benchers/async_bench.py
+```
+
+- ### sync test
+```bash
+python servers/sync_server.py
+```
+```bash
+python benchers/sync_bench.py
+```
+
+**to plot the results**
+- whole
+```bash
+python plot_whole.py
+```
+- async
+```bash
+python async_plot.py
+```
+- sync
+```bash
+python sync_plot.py
+```
+

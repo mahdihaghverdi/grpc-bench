@@ -1,7 +1,10 @@
 import asyncio
+import pathlib
+import sys
 
 import grpc
 
+sys.path.append(str(pathlib.Path(__file__).parent.parent))
 from config import sample_pb2_grpc, sample_pb2
 
 
