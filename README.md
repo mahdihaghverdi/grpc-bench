@@ -14,7 +14,7 @@ Also they log everything happens in the benchmark.
 - async_sample.py
 - sync_sample.py
 
-- These two files are just really small requesters for small and command line results.
+These two files are just really small requesters for small and command line results.
 You can see their results with 
 ```bash
 python sync_sample.py
