@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package github;
+
+service GitHubService {
+    rpc GetRepository(RepositoryRequest) returns (RepositoryResponse) {}
+}
+
+message RepositoryRequest {
+    string owner = 1;
+    string name = 2;
+}
+
+message RepositoryResponse {
+    string name = 1;
+    string description = 2;
+}
